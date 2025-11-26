@@ -23,23 +23,23 @@ Each domain operates independently but uses the same underlying model pipeline, 
 The recommendation engine uses a hybrid approach combining the strengths of both Collaborative Filtering (CF) and Content-Based Filtering (CBF):
 
 1. Collaborative Filtering (SVD):
-   -> Builds a sparse user–item matrix.
-   -> Applies truncated Singular Value Decomposition (SVD).
-   -> Learns low-dimensional embeddings for users and items.
-   -> Predicts affinity through vector dot products.
+-> Builds a sparse user–item matrix.
+-> Applies truncated Singular Value Decomposition (SVD).
+-> Learns low-dimensional embeddings for users and items.
+-> Predicts affinity through vector dot products.
 
 2. Content-Based Filtering (TF-IDF):
 
-   -> Extracts text features from genres or authors.
-   -> Computes item–item similarity using TF-IDF and cosine similarity.
-   -> When user history exists, compares new items to previously rated ones.
-   -> In cold-start cases, uses keyword-based matching.
+-> Extracts text features from genres or authors.
+-> Computes item–item similarity using TF-IDF and cosine similarity.
+-> When user history exists, compares new items to previously rated ones.
+-> In cold-start cases, uses keyword-based matching.
 
 3. Hybrid Model:
 
-   -> Combines CF and content scores using weighted blending (default 70% CF, 30% content).
-   -> Supports switching between CF-only, Content-only, or Hybrid modes in the UI.
-   -> This hybrid strategy ensures meaningful recommendations even with sparse data or new users.
+-> Combines CF and content scores using weighted blending (default 70% CF, 30% content).
+-> Supports switching between CF-only, Content-only, or Hybrid modes in the UI.
+-> This hybrid strategy ensures meaningful recommendations even with sparse data or new users.
 
 # Datasets
 
@@ -63,9 +63,8 @@ Required Python libraries:
 
 Optional:
 
--> kaggle.json (for automatic dataset download)
-
-API keys for TMDB, Google Books, or Jikan (for posters; not required)
+1. kaggle.json (for automatic dataset download)
+2. API keys for TMDB, Google Books, or Jikan (for posters; not required)
 
 # Conclusion
 
