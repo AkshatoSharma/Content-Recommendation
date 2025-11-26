@@ -59,11 +59,11 @@ Large datasets are sampled (default: up to 20,000 ratings) to avoid memory issue
 
 Required Python libraries:
 
-1. pandas, numpy, scipy, scikit-learn, gradio, requests, kaggle
+-> pandas, numpy, scipy, scikit-learn, gradio, requests, kaggle
 
 Optional:
 
-1. kaggle.json (for automatic dataset download)
+-> kaggle.json (for automatic dataset download)
 
 API keys for TMDB, Google Books, or Jikan (for posters; not required)
 
